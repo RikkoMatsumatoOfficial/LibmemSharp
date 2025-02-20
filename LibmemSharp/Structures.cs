@@ -25,7 +25,7 @@ namespace LibmemSharp
     {
         int base_t;
         int end_t;
-        Int32[] size;
+        UIntPtr size;
         string path;
         string name;
     }
@@ -33,13 +33,13 @@ namespace LibmemSharp
     {
         Int32 base_t;
         Int32 end_t;
-        Int32[] size;
+        UIntPtr size;
         LM_PROT[] prot;
     }
     public struct lm_inst_t
     {
         Int32 address;
-        Int32[] size;
+        UIntPtr size;
         byte[] bytes;
         string[] mnemonic;
         string[] op_str;
@@ -51,7 +51,7 @@ namespace LibmemSharp
     }
     public struct lm_vmt_t
     {
-        Int32[] vtable;
+        UIntPtr[] vtable;
         lm_vmt_entry_t[] hkentries;
     }
 }
