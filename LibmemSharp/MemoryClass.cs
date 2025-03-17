@@ -11,7 +11,7 @@ namespace LibmemSharp
     {
         const string l_mem = @"libmem.dll";
         [DllImport(l_mem)]
-        public static extern lm_bool_t LM_FindProcess(string process_name, lm_process_t process); //BASS START
+        public static extern lm_bool_t LM_FindProcess(string process_name, lm_process_t process); //LM_FindProcess P/Invoke Function
 
         public lm_bool_t OpenProcess(string proc_name, lm_process_t process)
         {
